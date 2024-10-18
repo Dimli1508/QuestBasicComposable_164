@@ -1,5 +1,6 @@
 package com.example.questbasiccomposable_164
 
+import android.graphics.drawable.shapes.OvalShape
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -17,6 +18,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.layout.VerticalAlignmentLine
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -74,6 +76,11 @@ fun Dimas (modifier: Modifier = Modifier) {
         Text("20220140164",
             fontSize = 45.sp,
             fontWeight = FontWeight.Medium)
+        Image(
+            painter = painterResource(id = R.drawable.me),
+            contentDescription = "",
+            modifier = Modifier.clip(RectangleShape)
+        )
     }
 }
 
