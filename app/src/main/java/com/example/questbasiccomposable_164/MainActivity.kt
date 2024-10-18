@@ -51,7 +51,7 @@ fun Dimas (modifier: Modifier = Modifier) {
 
         Text("Ini Adalah Halaman Login",
             fontSize = 30.sp,
-            )
+            fontWeight = FontWeight.Thin)
 
 
     }
