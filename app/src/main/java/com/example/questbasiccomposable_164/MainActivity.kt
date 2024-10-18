@@ -68,6 +68,9 @@ fun Dimas (modifier: Modifier = Modifier) {
             fontSize = 30.sp,
             color = Color.Red,
             fontWeight = FontWeight.Medium)
+        Text("Dimas Luthfi Islamy",
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Medium)
     }
 }
 
