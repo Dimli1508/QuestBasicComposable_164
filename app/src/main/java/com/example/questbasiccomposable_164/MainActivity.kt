@@ -42,7 +42,8 @@ fun Dimas (modifier: Modifier = Modifier) {
         modifier = Modifier
             .fillMaxSize()
             .padding(top = 50.dp)) {
-        Text("Login")
+        Text("Login",
+            fontSize = 100)
 
     }
 }
