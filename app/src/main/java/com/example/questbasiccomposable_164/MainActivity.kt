@@ -15,6 +15,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.VerticalAlignmentLine
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import com.example.questbasiccomposable_164.ui.theme.QuestBasicComposable_164Theme
 import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
@@ -26,7 +27,7 @@ class MainActivity : ComponentActivity() {
             QuestBasicComposable_164Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Dimas(modifier = Modifier.padding(innerPadding))
-                    )
+
                 }
             }
         }
@@ -35,9 +36,13 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Dimas (modifier: Modifier = Modifier) {
-    Column {
-        horizontalAlingment = Alignment.CenterHorizontally,
-        verticalArrangment =Arrangement.Top,
+    Column (
+        horizontalAlignment = Alignment.CenterHorizontally,
+        verticalArrangement =Arrangement.Top,
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(top = 50.dp)) {
+        Text("Login")
 
     }
 }
