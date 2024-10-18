@@ -14,8 +14,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.VerticalAlignmentLine
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.questbasiccomposable_164.ui.theme.QuestBasicComposable_164Theme
 import org.intellij.lang.annotations.JdkConstants.HorizontalAlignment
 
@@ -43,7 +45,9 @@ fun Dimas (modifier: Modifier = Modifier) {
             .fillMaxSize()
             .padding(top = 50.dp)) {
         Text("Login",
-            fontSize = 100)
+            fontSize = 100.sp,
+            fontWeight = FontWeight.Bold
+        )
 
     }
 }
