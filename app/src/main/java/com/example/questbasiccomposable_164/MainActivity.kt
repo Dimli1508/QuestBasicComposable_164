@@ -72,7 +72,7 @@ fun Dimas (modifier: Modifier = Modifier) {
             fontSize = 20.sp,
             fontWeight = FontWeight.Medium)
         Text("20220140164",
-            fontSize = 70.sp,
+            fontSize = 45.sp,
             fontWeight = FontWeight.Medium)
     }
 }
