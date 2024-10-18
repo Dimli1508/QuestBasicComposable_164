@@ -16,6 +16,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.VerticalAlignmentLine
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
@@ -63,6 +64,10 @@ fun Dimas (modifier: Modifier = Modifier) {
             modifier = Modifier.clip(CircleShape)
         )
 
+        Text("Nama",
+            fontSize = 30.sp,
+            color = Color.Red,
+            fontWeight = FontWeight.Medium)
     }
 }
 
